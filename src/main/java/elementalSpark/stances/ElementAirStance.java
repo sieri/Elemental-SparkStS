@@ -28,7 +28,7 @@ public class ElementAirStance extends ElementAbstractStance {
         super();
         name = NAME;
         ID = STANCE_ID;
-
+        type = ElementType.Air;
         this.c = Color.YELLOW.cpy();
 
         updateDescription();
@@ -36,6 +36,7 @@ public class ElementAirStance extends ElementAbstractStance {
 
     @Override
     public void onPlayCard(AbstractCard card) {
+        super.onPlayCard(card);
         if(!card.shuffleBackIntoDrawPile)
         {
             card.shuffleBackIntoDrawPile = true;

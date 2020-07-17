@@ -25,13 +25,15 @@ public class ElementEarthStance extends ElementAbstractStance  {
         name = NAME;
         ID = STANCE_ID;
 
+        type = ElementType.Earth;
+
         this.c = Color.GREEN.cpy();
         updateDescription();
     }
 
     @Override
     public void onEnterStance() {
-
+        super.onEnterStance();
         if(AbstractDungeon.player.hasPower(DexterityPower.POWER_ID))
         {
             AbstractDungeon.player.getPower(DexterityPower.POWER_ID).stackPower(boost);
@@ -44,6 +46,7 @@ public class ElementEarthStance extends ElementAbstractStance  {
 
     @Override
     public void onExitStance() {
+        super.onExitStance();
         if(AbstractDungeon.player.hasPower(DexterityPower.POWER_ID))
         {
             AbstractDungeon.player.getPower(DexterityPower.POWER_ID).stackPower(-boost);

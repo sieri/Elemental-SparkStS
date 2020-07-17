@@ -28,9 +28,9 @@ public class FlowIn extends AbstractDynamicCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON; //  Up to you, I like auto-complete on these
-    private static final CardTarget TARGET = CardTarget.ENEMY;  //   since they don't change much.
-    private static final CardType TYPE = CardType.SKILL;       //
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheSpark.Enums.COLOR_WHITE;
 
     private static final int COST = 1;

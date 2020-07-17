@@ -3,13 +3,14 @@ package elementalSpark.cards;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import elementalSpark.ElementalSpark;
 import elementalSpark.characters.TheSpark;
-import elementalSpark.modifiers.AdaptiveModifier;
+import elementalSpark.modifiers.BasicAdaptiveAttackModifier;
 
 import static elementalSpark.ElementalSpark.makeCardPath;
 
@@ -48,7 +49,7 @@ public class SparkStrike extends AbstractDynamicCard {
         tags.add(CardTags.STRIKE);
         tags.add(CardTags.STARTER_STRIKE);
 
-        CardModifierManager.addModifier(this,new AdaptiveModifier());
+        CardModifierManager.addModifier(this,new BasicAdaptiveAttackModifier(2));
 
     }
 

@@ -143,19 +143,7 @@ public class ElementalSpark implements
 
       
         setModID("elementalSpark");
-        // cool
-        // TODO: NOW READ THIS!!!!!!!!!!!!!!!:
-        
-        // 1. Go to your resources folder in the project panel, and refactor> rename theDefaultResources to
-        // yourModIDResources.
-        
-        // 2. Click on the localization > eng folder and press ctrl+shift+r, then select "Directory" (rather than in Project)
-        // replace all instances of theDefault with yourModID.
-        // Because your mod ID isn't the default. Your cards (and everything else) should have Your mod id. Not mine.
-        
-        // 3. FINALLY and most importantly: Scroll up a bit. You may have noticed the image locations above don't use getModID()
-        // Change their locations to reflect your actual ID rather than theDefault. They get loaded before getID is a thing.
-        
+
         logger.info("Done subscribing");
         
         logger.info("Creating the color " + TheSpark.Enums.COLOR_WHITE.toString());
@@ -415,7 +403,10 @@ public class ElementalSpark implements
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/DefaultMod-Orb-Strings.json");
-        
+
+        BaseMod.loadCustomStringsFile(UIStrings.class,
+                getModID() + "Resources/localization/eng/elementalSpark-UI-Strings.json");
+
         logger.info("Done edittting strings");
     }
     

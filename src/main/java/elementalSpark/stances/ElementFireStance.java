@@ -26,6 +26,8 @@ public class ElementFireStance extends ElementAbstractStance  {
         name = NAME;
         ID = STANCE_ID;
 
+        type = ElementType.Fire;
+
         this.c = Color.RED.cpy();
 
         updateDescription();
@@ -33,7 +35,7 @@ public class ElementFireStance extends ElementAbstractStance  {
 
     @Override
     public void onEnterStance() {
-
+        super.onEnterStance();
         if(AbstractDungeon.player.hasPower(StrengthPower.POWER_ID))
         {
             AbstractDungeon.player.getPower(StrengthPower.POWER_ID).stackPower(boost);
@@ -46,6 +48,7 @@ public class ElementFireStance extends ElementAbstractStance  {
 
     @Override
     public void onExitStance() {
+        super.onExitStance();
         if(AbstractDungeon.player.hasPower(StrengthPower.POWER_ID))
         {
             AbstractDungeon.player.getPower(StrengthPower.POWER_ID).stackPower(-boost);

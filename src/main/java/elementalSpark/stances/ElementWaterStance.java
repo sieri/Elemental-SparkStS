@@ -25,14 +25,16 @@ public class ElementWaterStance extends ElementAbstractStance  {
         name = NAME;
         ID = STANCE_ID;
 
-        this.c = Color.BLUE.cpy();
+        type = ElementType.Water;
+
+        this.c = Color.SKY.cpy();
 
         updateDescription();
     }
 
     @Override
     public void onEnterStance() {
-
+        super.onEnterStance();
         if(AbstractDungeon.player.hasPower(DrawPower.POWER_ID))
         {
             AbstractDungeon.player.getPower(DrawPower.POWER_ID).stackPower(boost);
@@ -45,6 +47,7 @@ public class ElementWaterStance extends ElementAbstractStance  {
 
     @Override
     public void onExitStance() {
+        super.onExitStance();
         if(AbstractDungeon.player.hasPower(DrawPower.POWER_ID))
         {
             AbstractDungeon.player.getPower(DrawPower.POWER_ID).reducePower(boost);
