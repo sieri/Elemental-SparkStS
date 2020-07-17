@@ -1,0 +1,19 @@
+{
+        "elementalSpark:ElementFire": {
+                "NAME": "Element Fire",
+                "DESCRIPTION": ["The fire run through you boosting you. NL +2 strength"]
+        },
+        "elementalSpark:ElementWater": {
+                "NAME": "Element Water",
+                "DESCRIPTION": ["The water makes you flowing through the battlefield. NL +1 card drawn"]
+        },
+        "elementalSpark:ElementAir": {
+                "NAME": "Element Air",
+                "DESCRIPTION": ["You feel lighter and faster. NL Cards played go back to draw pile"]
+        },
+        "elementalSpark:ElementEarth": {
+                "NAME": "Element Earth",
+                "DESCRIPTION": ["You feel more resilient. NL +2 dexterity"]
+        }
+
+}

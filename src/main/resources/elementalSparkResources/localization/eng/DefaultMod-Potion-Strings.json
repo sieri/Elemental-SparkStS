@@ -1,0 +1,6 @@
+{
+"elementalSpark:PlaceholderPotion": {
+        "NAME": "Placeholder Potion",
+        "DESCRIPTION": ["Gain ", " At the end of your turn, lose ", " Strength."]
+}
+}

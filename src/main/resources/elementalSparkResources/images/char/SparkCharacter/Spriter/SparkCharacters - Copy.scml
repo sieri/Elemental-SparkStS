@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="AuraExternal.png" width="500" height="500" pivot_x=".5" pivot_y=".5"/>
+        <file id="1" name="AuraRotation.png" width="500" height="500" pivot_x=".5" pivot_y=".5"/>
+        <file id="2" name="centralGlow.png" width="500" height="500" pivot_x=".5" pivot_y=".5"/>
+        <file id="3" name="Middle_Texture.png" width="500" height="500" pivot_x=".5" pivot_y=".5"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="bone_000" type="bone" w="83.5645" h="10"/>
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <object_ref id="0" parent="0" timeline="1" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone y="250" angle="291.447736"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="centralGlow">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-93.075149" y="36.565237" angle="68.552264" scale_x="0.5" scale_y="0.5"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
