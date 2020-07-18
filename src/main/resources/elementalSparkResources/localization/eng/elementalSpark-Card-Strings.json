@@ -22,6 +22,14 @@
   "elementalSpark:Defend":{
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
-  }
-
+  },
+  "elementalSpark:VolatileSpark":{
+    "NAME": "Volatile Spark",
+    "DESCRIPTION": "Switch to a random Element",
+    "UPGRADE_DESCRIPTION": "Switch to an Element of your choice"
+  },
+  "elementalSpark:FireOfTheForge":{
+    "NAME": "Fire of the Forge",
+    "DESCRIPTION": "Upgrade a Random card in your hand when entering Fire"
+   }
 }

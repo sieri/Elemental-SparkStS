@@ -4,5 +4,31 @@
       "adaptive"
     ],
     "DESCRIPTION" : "Gain an effect depending on the current element"
+  },
+  {
+    "NAMES": [
+      "Fire"
+    ],
+    "DESCRIPTION" : "Element boosting your attack"
+  },
+  {
+    "NAMES": [
+      "Water"
+    ],
+    "DESCRIPTION" : "Element boosting your options"
+  },
+  {
+    "NAMES": [
+      "Air"
+    ],
+    "DESCRIPTION" : "Element boosting your agility"
+  },
+  {
+    "NAMES": [
+      "Earth"
+    ],
+    "DESCRIPTION" : "Element boosting your defence"
   }
+
+
 ]

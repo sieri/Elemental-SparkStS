@@ -13,11 +13,7 @@ import static elementalSpark.ElementalSpark.makeID;
 
 
 
-
-
 public abstract class AbstractAdaptiveModifier extends AbstractCardModifier implements ElementAbstractStance.Sub {
-
-
 
     protected Map<String, String> effects;
 
