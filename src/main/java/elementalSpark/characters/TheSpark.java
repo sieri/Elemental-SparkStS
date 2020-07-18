@@ -165,7 +165,7 @@ public class TheSpark extends CustomPlayer {
         retVal.add(FlowIn.ID);
         retVal.add(Levitate.ID);
         retVal.add(LightUp.ID);
-
+        retVal.add(VolatileSpark.ID);
 
         return retVal;
     }

@@ -22,8 +22,6 @@ import elementalSpark.cards.*;
 import elementalSpark.characters.TheSpark;
 import elementalSpark.util.IDCheckDontTouchPls;
 import elementalSpark.util.TextureLoader;
-import elementalSpark.variables.DefaultCustomVariable;
-import elementalSpark.variables.DefaultSecondMagicNumber;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -341,14 +339,12 @@ public class ElementalSpark implements
         pathCheck();
         // Add the Custom Dynamic Variables
         logger.info("Add variabls");
+
         // Add the Custom Dynamic variabls
-        BaseMod.addDynamicVariable(new DefaultCustomVariable());
-        BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
+
         
         logger.info("Adding cards");
         // Add the cards
-
-
 
         BaseMod.addCard(new Defend());
         BaseMod.addCard(new EarthShield());
@@ -356,16 +352,15 @@ public class ElementalSpark implements
         BaseMod.addCard(new Levitate());
         BaseMod.addCard(new LightUp());
         BaseMod.addCard(new SparkStrike());
+        BaseMod.addCard(new VolatileSpark());
+        BaseMod.addCard(new FireOfTheForge());
 
 
 
         logger.info("Done adding cards!");
     }
     
-    // There are better ways to do this than listing every single individual card, but I do not want to complicate things
-    // in a "tutorial" mod. This will do and it's completely ok to use. If you ever want to clean up and
-    // shorten all the imports, go look take a look at other mods, such as Hubris.
-    
+
     // ================ /ADD CARDS/ ===================
     
     
