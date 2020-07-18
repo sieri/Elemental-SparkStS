@@ -31,5 +31,9 @@
   "elementalSpark:FireOfTheForge":{
     "NAME": "Fire of the Forge",
     "DESCRIPTION": "Upgrade a Random card in your hand when entering Fire"
-   }
+   },
+  "elementalSpark:FinalFlame":{
+    "NAME": "The Final Flame",
+    "DESCRIPTION": "Deal !D! Damage NL Exit element NL Prevent using Fire for 4 turns"
+  }
 }

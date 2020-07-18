@@ -7,25 +7,25 @@
   },
   {
     "NAMES": [
-      "Fire"
+      "fire"
     ],
     "DESCRIPTION" : "Element boosting your attack"
   },
   {
     "NAMES": [
-      "Water"
+      "water"
     ],
     "DESCRIPTION" : "Element boosting your options"
   },
   {
     "NAMES": [
-      "Air"
+      "air"
     ],
     "DESCRIPTION" : "Element boosting your agility"
   },
   {
     "NAMES": [
-      "Earth"
+      "earth"
     ],
     "DESCRIPTION" : "Element boosting your defence"
   }

@@ -354,6 +354,7 @@ public class ElementalSpark implements
         BaseMod.addCard(new SparkStrike());
         BaseMod.addCard(new VolatileSpark());
         BaseMod.addCard(new FireOfTheForge());
+        BaseMod.addCard(new FinalFlame());
 
 
 

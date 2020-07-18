@@ -6,7 +6,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import elementalSpark.ElementalSpark;
+import elementalSpark.actions.ChangeElementalStanceAction;
 import elementalSpark.characters.TheSpark;
+import elementalSpark.stances.ElementAbstractStance;
 import elementalSpark.stances.ElementAirStance;
 import elementalSpark.stances.ElementEarthStance;
 
@@ -55,7 +57,7 @@ public class EarthShield extends AbstractDynamicCard {
         );
 
         AbstractDungeon.actionManager.addToBottom(
-                new ChangeStanceAction(new ElementEarthStance())
+                new ChangeElementalStanceAction(ElementAbstractStance.ElementType.Earth)
         );
     }
 

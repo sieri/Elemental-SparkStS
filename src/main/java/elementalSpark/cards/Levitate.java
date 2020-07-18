@@ -11,7 +11,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import elementalSpark.ElementalSpark;
+import elementalSpark.actions.ChangeElementalStanceAction;
 import elementalSpark.characters.TheSpark;
+import elementalSpark.stances.ElementAbstractStance;
 import elementalSpark.stances.ElementAirStance;
 
 import static elementalSpark.ElementalSpark.makeCardPath;
@@ -54,7 +56,7 @@ public class Levitate extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new ChangeStanceAction(new ElementAirStance()));
+                new ChangeElementalStanceAction(ElementAbstractStance.ElementType.Air));
         AbstractDungeon.actionManager.addToBottom(
                 new RandomCardFromDiscardPileToHandAction());
     }

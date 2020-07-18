@@ -8,7 +8,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import elementalSpark.ElementalSpark;
+import elementalSpark.actions.ChangeElementalStanceAction;
 import elementalSpark.characters.TheSpark;
+import elementalSpark.stances.ElementAbstractStance;
 import elementalSpark.stances.ElementFireStance;
 
 import static elementalSpark.ElementalSpark.makeCardPath;
@@ -53,7 +55,7 @@ public class LightUp extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(
-                new ChangeStanceAction( new ElementFireStance()));
+                new ChangeElementalStanceAction(ElementAbstractStance.ElementType.Fire));
     }
 
 

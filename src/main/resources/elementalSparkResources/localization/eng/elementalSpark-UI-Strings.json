@@ -6,6 +6,14 @@
       "Air":" NL Apply Weak",
       "Earth":" NL Gain !B! Block."
     }
+  },
+  "elementalSpark:ElementLimiterModifier": {
+    "TEXT_DICT": {
+      "Fire":"Fire Lock NL",
+      "Water":"Water Lock NL",
+      "Air":"Air Lock NL",
+      "Earth":"Earth Lock NL"
+    }
   }
 
 }

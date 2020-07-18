@@ -2,5 +2,21 @@
   "elementalSpark:FireOfTheForgePower": {
     "NAME": "Fire of the Forge",
     "DESCRIPTIONS": ["Upgrade a Random card in your hand when entering Fire"]
+  },
+  "elementalSpark:StopFirePower": {
+    "NAME": "Extinguished fire",
+    "DESCRIPTIONS": ["Prevent switching to the Fire element for ", " turn", " turns"]
+  },
+  "elementalSpark:StopWaterPower": {
+    "NAME": "Drought",
+    "DESCRIPTIONS": ["Prevent switching to the Water element for ", " turn", " turns"]
+  },
+  "elementalSpark:StopAirPower": {
+    "NAME": "Vacuum",
+    "DESCRIPTIONS": ["Prevent switching to the Air element for ", " turn", " turns"]
+  },
+  "elementalSpark:StopEarthPower": {
+    "NAME": "Cracked rock",
+    "DESCRIPTIONS": ["Prevent switching to the Earth element for ", " turn", " turns"]
   }
 }
