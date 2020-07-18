@@ -1,0 +1,6 @@
+{
+  "elementalSpark:FireOfTheForgePower": {
+    "NAME": "Fire of the Forge",
+    "DESCRIPTIONS": ["Upgrade a Random card in your hand when entering Fire"]
+  }
+}

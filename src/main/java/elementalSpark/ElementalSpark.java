@@ -375,9 +375,13 @@ public class ElementalSpark implements
         BaseMod.loadCustomStringsFile(CardStrings.class,
                 getModID() + "Resources/localization/eng/elementalSpark-Card-Strings.json");
         
-        // PowerStrings
+        // StancesStrings
         BaseMod.loadCustomStringsFile(StanceStrings.class,
                 getModID() + "Resources/localization/eng/elementalSpark-Stance-Strings.json");
+
+        // PowerStrings
+        BaseMod.loadCustomStringsFile(PowerStrings.class,
+                getModID() + "Resources/localization/eng/elementalSpark-Power-Strings.json");
         
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
@@ -399,6 +403,7 @@ public class ElementalSpark implements
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/DefaultMod-Orb-Strings.json");
 
+        //UIStrings
         BaseMod.loadCustomStringsFile(UIStrings.class,
                 getModID() + "Resources/localization/eng/elementalSpark-UI-Strings.json");
 
