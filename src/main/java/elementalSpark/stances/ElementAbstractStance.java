@@ -12,9 +12,18 @@ import java.util.LinkedList;
 
 public abstract class ElementAbstractStance extends AbstractStance {
 
-    public enum ElementType {None ,Fire, Water, Air, Earth}
+    public enum ElementType {Fire, Water, Air, Earth, None}
 
     public ElementType type;
+
+    public static ElementType getType(AbstractStance stance)
+    {
+        if(stance instanceof ElementAbstractStance)
+        {
+            return ((ElementAbstractStance) stance).type;
+        }
+        return  ElementType.None;
+    }
 
 
     public ElementAbstractStance()

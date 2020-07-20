@@ -1,6 +1,7 @@
 package elementalSpark.cards;
 
 
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -10,7 +11,7 @@ import elementalSpark.characters.TheSpark;
 
 import static elementalSpark.ElementalSpark.makeCardPath;
 
-
+@AutoAdd.Seen
 public class Defend extends AbstractDynamicCard {
 
     // TEXT DECLARATION

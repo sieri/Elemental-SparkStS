@@ -37,7 +37,7 @@ public class EarthShield extends AbstractDynamicCard {
     private static final int UPGRADED_COST = 1;
 
     private static final int BLOCK = 8;
-    private static final int UPGRADE_PLUS_DMG = 8;
+    private static final int UPGRADE_PLUS_BLOCK = 8;
 
     // /STAT DECLARATION/
 
@@ -67,7 +67,7 @@ public class EarthShield extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }

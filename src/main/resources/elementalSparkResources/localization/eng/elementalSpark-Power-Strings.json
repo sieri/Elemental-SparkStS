@@ -18,5 +18,9 @@
   "elementalSpark:StopEarthPower": {
     "NAME": "Cracked rock",
     "DESCRIPTIONS": ["Prevent switching to the Earth element for ", " turn", " turns"]
+  },
+  "elementalSpark:DodgePower": {
+    "NAME": "Dodge",
+    "DESCRIPTIONS": ["Give a ", "% chance to avoid incoming attacks"]
   }
 }

@@ -56,6 +56,7 @@ public class FireOfTheForgePower extends AbstractPower implements CloneablePower
         //upgrade a card when the player enter fire stance
         if (newStance instanceof ElementFireStance)
         {
+            this.flash();
             AbstractDungeon.actionManager.addToBottom(
                     new UpgradeRandomCardAction());
         }

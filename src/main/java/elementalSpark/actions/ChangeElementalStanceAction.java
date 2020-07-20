@@ -84,6 +84,7 @@ public class ChangeElementalStanceAction extends ChangeStanceAction {
 
         if( !target.isEmpty() && AbstractDungeon.player.hasPower(target))
         {
+            AbstractDungeon.player.getPower(target).flash();
             isDone = true;
             return;
         }

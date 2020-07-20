@@ -35,5 +35,18 @@
   "elementalSpark:FinalFlame":{
     "NAME": "The Final Flame",
     "DESCRIPTION": "Deal !D! Damage NL Exit element NL Prevent using Fire for 4 turns"
+  },
+  "elementalSpark:Splash":{
+    "NAME": "Splash",
+    "DESCRIPTION": "Deal !D! Damage NL Draw from your discard pile when entering Water element"
+  },
+  "elementalSpark:FlyLikeAButterfly":{
+    "NAME": "Fly like a Butterfly",
+    "DESCRIPTION": "3% chance to dodge incoming attacks while in the Air element"
+  },
+  "elementalSpark:Harden":{
+    "NAME": "Harden",
+    "DESCRIPTION": "Convert current block to TempHP",
+    "UPGRADE_DESCRIPTION": "Gain !B! block NL Convert current block to TempHP"
   }
 }

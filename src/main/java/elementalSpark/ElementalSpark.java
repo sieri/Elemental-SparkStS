@@ -1,5 +1,6 @@
 package elementalSpark;
 
+import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
@@ -16,6 +17,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import javafx.scene.effect.Light;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import elementalSpark.cards.*;
@@ -346,15 +348,31 @@ public class ElementalSpark implements
         logger.info("Adding cards");
         // Add the cards
 
-        BaseMod.addCard(new Defend());
-        BaseMod.addCard(new EarthShield());
-        BaseMod.addCard(new FlowIn());
-        BaseMod.addCard(new Levitate());
-        BaseMod.addCard(new LightUp());
-        BaseMod.addCard(new SparkStrike());
-        BaseMod.addCard(new VolatileSpark());
-        BaseMod.addCard(new FireOfTheForge());
-        BaseMod.addCard(new FinalFlame());
+        //neutral-all
+       BaseMod.addCard( new Defend());
+       BaseMod.addCard( new SparkStrike());
+       BaseMod.addCard( new VolatileSpark());
+
+        //Fire
+       BaseMod.addCard( new FinalFlame());
+       BaseMod.addCard( new FireOfTheForge());
+       BaseMod.addCard( new LightUp());
+
+        //Water
+       BaseMod.addCard( new Splash());
+       BaseMod.addCard( new FlowIn());
+
+        //Air
+       BaseMod.addCard( new Levitate());
+       BaseMod.addCard(  new FlyLikeAButterfly());
+
+        //Earth
+       BaseMod.addCard( new EarthShield());
+       BaseMod.addCard( new Harden());
+
+
+
+
 
 
 
@@ -408,7 +426,7 @@ public class ElementalSpark implements
         BaseMod.loadCustomStringsFile(UIStrings.class,
                 getModID() + "Resources/localization/eng/elementalSpark-UI-Strings.json");
 
-        logger.info("Done edittting strings");
+        logger.info("Done editing strings");
     }
     
     // ================ /LOAD THE TEXT/ ===================
