@@ -48,5 +48,10 @@
     "NAME": "Harden",
     "DESCRIPTION": "Convert current block to TempHP",
     "UPGRADE_DESCRIPTION": "Gain !B! block NL Convert current block to TempHP"
+  },
+  "elementalSpark:AdaptAndStrike":{
+    "NAME": "Adapt and Strike",
+    "DESCRIPTION": "Deal !D! Damage NL Gain !M! Damage changing elements while in hand"
+
   }
 }
