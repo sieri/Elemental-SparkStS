@@ -370,6 +370,7 @@ public class ElementalSpark implements
         //Earth
        BaseMod.addCard( new EarthShield());
        BaseMod.addCard( new Harden());
+       BaseMod.addCard( new RockThrow());
 
 
 

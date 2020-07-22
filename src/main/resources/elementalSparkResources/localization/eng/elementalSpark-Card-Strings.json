@@ -52,6 +52,9 @@
   "elementalSpark:AdaptAndStrike":{
     "NAME": "Adapt and Strike",
     "DESCRIPTION": "Deal !D! Damage NL Gain !M! Damage changing elements while in hand"
-
+  },
+  "elementalSpark:RockThrow":{
+    "NAME": "Rock throw",
+    "DESCRIPTION": "Destroy all Block and deal Damage equal to it's amount to all enemies (Deals !D! damage.)"
   }
 }
