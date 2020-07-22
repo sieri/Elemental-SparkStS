@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import elementalSpark.relics.SparkStarterRelic;
 import javafx.scene.effect.Light;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -316,18 +317,17 @@ public class ElementalSpark implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        /*BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheSpark.Enums.COLOR_WHITE);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheSpark.Enums.COLOR_WHITE);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheSpark.Enums.COLOR_WHITE);
-        */
+        BaseMod.addRelicToCustomPool(new SparkStarterRelic(), TheSpark.Enums.COLOR_WHITE);
+
         // This adds a relic to the Shared pool. Every character can find this relic.
-        //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-        
+
+
 
         logger.info("Done adding relics!");
     }
     
     // ================ /ADD RELICS/ ===================
+
 
 
 
