@@ -68,9 +68,9 @@ public class ElementalSpark implements
     public static final Color SPARK_WHITE = CardHelper.getColor(255f, 255f, 255f);
     
     // Potion Colors in RGB
-    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
-    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
-    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
+ //   public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
+ //   public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
+ //   public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
     
 
   
@@ -363,9 +363,11 @@ public class ElementalSpark implements
        BaseMod.addCard( new Splash());
        BaseMod.addCard( new FlowIn());
        BaseMod.addCard( new StandingWater());
+
         //Air
        BaseMod.addCard( new Levitate());
        BaseMod.addCard( new FlyLikeAButterfly());
+       BaseMod.addCard( new SuddenWind());
 
         //Earth
        BaseMod.addCard( new EarthShield());
