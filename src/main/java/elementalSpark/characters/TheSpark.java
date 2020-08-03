@@ -107,7 +107,6 @@ public class TheSpark extends CustomPlayer {
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
-                // I left these in DefaultMod.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
                 THE_DEFAULT_SHOULDER_2, // campfire pose
                 THE_DEFAULT_SHOULDER_1, // another campfire pose
                 THE_DEFAULT_CORPSE, // dead corpse
@@ -122,8 +121,11 @@ public class TheSpark extends CustomPlayer {
                 THE_DEFAULT_SKELETON_ATLAS,
                 THE_DEFAULT_SKELETON_JSON,
                 1.0f);
+
+
+        state.setTimeScale(0.5f);
         AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
-        e.setDelay(1000);
+
         //e.setTime(e.getEndTime() * MathUtils.random());
 
 

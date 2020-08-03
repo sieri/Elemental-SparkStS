@@ -56,5 +56,9 @@
   "elementalSpark:RockThrow":{
     "NAME": "Rock throw",
     "DESCRIPTION": "Destroy all Block and deal Damage equal to it's amount to all enemies (Deals !D! damage.)"
+  },
+  "elementalSpark:StandingWater":{
+    "NAME": "Standing Water",
+    "DESCRIPTION": "Retain !M! card in your inventory if finishing the turn in Water stance."
   }
 }

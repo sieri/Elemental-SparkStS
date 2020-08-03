@@ -1,23 +1,18 @@
 package elementalSpark.actions;
 
-import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
-
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.NeutralStance;
-import elementalSpark.ElementalSpark;
 import elementalSpark.powers.AbstractStopElementPower;
-import elementalSpark.powers.StopFirePower;
 import elementalSpark.stances.ElementAbstractStance.ElementType;
 import elementalSpark.stances.ElementAirStance;
 import elementalSpark.stances.ElementEarthStance;
 import elementalSpark.stances.ElementFireStance;
 import elementalSpark.stances.ElementWaterStance;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 import static elementalSpark.ElementalSpark.makeID;
@@ -65,7 +60,7 @@ public class ChangeElementalStanceAction extends ChangeStanceAction {
 
 
         //get an element type at random
-        return typeAvailable.get(new Random().random(typeAvailable.size()));
+        return typeAvailable.get(new Random().random(typeAvailable.size()-1));
 
     }
 

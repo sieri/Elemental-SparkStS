@@ -362,10 +362,10 @@ public class ElementalSpark implements
         //Water
        BaseMod.addCard( new Splash());
        BaseMod.addCard( new FlowIn());
-
+       BaseMod.addCard( new StandingWater());
         //Air
        BaseMod.addCard( new Levitate());
-       BaseMod.addCard(  new FlyLikeAButterfly());
+       BaseMod.addCard( new FlyLikeAButterfly());
 
         //Earth
        BaseMod.addCard( new EarthShield());
