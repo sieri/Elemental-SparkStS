@@ -32,6 +32,10 @@
     "DESCRIPTION": "Convert current block to TempHP",
     "UPGRADE_DESCRIPTION": "Gain !B! block NL Convert current block to TempHP"
   },
+  "elementalSpark:LaminarFlow":{
+    "NAME": "Laminar Flow",
+    "DESCRIPTION": "Move all cards from the discard to the draw pile. NL Chose future draw order. NL Prevent using Water for 4 turns"
+  },
   "elementalSpark:Levitate": {
     "NAME": "Levitate",
     "DESCRIPTION": "Draw a random card from your discard pile NL switches to Air"

@@ -4,6 +4,7 @@ import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
+import basemod.abstracts.AbstractCardModifier;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -13,6 +14,7 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -363,7 +365,8 @@ public class ElementalSpark implements
        BaseMod.addCard( new Splash());
        BaseMod.addCard( new FlowIn());
        BaseMod.addCard( new StandingWater());
-
+       AbstractCard t = new LaminarFlow();
+        BaseMod.addCard(t);
         //Air
        BaseMod.addCard( new Levitate());
        BaseMod.addCard( new FlyLikeAButterfly());

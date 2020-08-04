@@ -38,8 +38,9 @@ public class SuddenWind extends AbstractDynamicCard {
     public static final CardColor COLOR = TheSpark.Enums.COLOR_WHITE;
 
 
-    private static final int COST = -1;
-    private static final int UPGRADED_COST = -1;
+
+    private static final int COST = -2;
+    private static final int UPGRADED_COST = -2;
 
     // /STAT DECLARATION/
 
