@@ -14,6 +14,8 @@
       "Air":"Air Lock NL",
       "Earth":"Earth Lock NL"
     }
+  },
+  "elementalSpark:uiSortingGroup": {
+    "TEXT": ["Choose draw card order (select two cards to invert their position)"]
   }
-
 }

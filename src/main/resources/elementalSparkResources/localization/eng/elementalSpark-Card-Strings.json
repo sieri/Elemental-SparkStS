@@ -1,60 +1,73 @@
 {
-  "elementalSpark:SparkStrike": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! Damage"
+  "elementalSpark:AdaptAndStrike": {
+    "NAME": "Adapt and Strike",
+    "DESCRIPTION": "Deal !D! Damage NL Gain !M! Damage changing elements while in hand"
   },
-  "elementalSpark:EarthShield":{
-    "NAME": "Earth Shield",
-    "DESCRIPTION": "Gain !B! Block. NL switches to Earth"
-  },
-  "elementalSpark:LightUp":{
-    "NAME": "Light up",
-    "DESCRIPTION": "Deal !D! Damage NL switches to Fire"
-  },
-  "elementalSpark:Levitate":{
-    "NAME": "Levitate",
-    "DESCRIPTION": "Draw a random card from your discard pile NL switches to Air"
-  },
-  "elementalSpark:FlowIn":{
-    "NAME": "Flow In",
-    "DESCRIPTION": "Draw a card from your draw pile NL switches to Water"
-  },
-  "elementalSpark:Defend":{
+  "elementalSpark:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "elementalSpark:VolatileSpark":{
-    "NAME": "Volatile Spark",
-    "DESCRIPTION": "Switch to a random Element",
-    "UPGRADE_DESCRIPTION": "Switch to an Element of your choice"
+  "elementalSpark:EarthShield": {
+    "NAME": "Earth Shield",
+    "DESCRIPTION": "Gain !B! Block. NL switches to Earth"
   },
-  "elementalSpark:FireOfTheForge":{
-    "NAME": "Fire of the Forge",
-    "DESCRIPTION": "Upgrade a Random card in your hand when entering Fire"
-   },
-  "elementalSpark:FinalFlame":{
+  "elementalSpark:FinalFlame": {
     "NAME": "The Final Flame",
     "DESCRIPTION": "Deal !D! Damage NL Exit element NL Prevent using Fire for 4 turns"
   },
-  "elementalSpark:Splash":{
-    "NAME": "Splash",
-    "DESCRIPTION": "Deal !D! Damage NL Draw from your discard pile when entering Water element"
+  "elementalSpark:FireOfTheForge": {
+    "NAME": "Fire of the Forge",
+    "DESCRIPTION": "Upgrade a Random card in your hand when entering Fire"
   },
-  "elementalSpark:FlyLikeAButterfly":{
+  "elementalSpark:FlowIn": {
+    "NAME": "Flow In",
+    "DESCRIPTION": "Draw a card from your draw pile NL switches to Water"
+  },
+  "elementalSpark:FlyLikeAButterfly": {
     "NAME": "Fly like a Butterfly",
     "DESCRIPTION": "3% chance to dodge incoming attacks while in the Air element"
   },
-  "elementalSpark:Harden":{
+  "elementalSpark:Harden": {
     "NAME": "Harden",
     "DESCRIPTION": "Convert current block to TempHP",
     "UPGRADE_DESCRIPTION": "Gain !B! block NL Convert current block to TempHP"
   },
-  "elementalSpark:AdaptAndStrike":{
-    "NAME": "Adapt and Strike",
-    "DESCRIPTION": "Deal !D! Damage NL Gain !M! Damage changing elements while in hand"
+  "elementalSpark:LaminarFlow":{
+    "NAME": "Laminar Flow",
+    "DESCRIPTION": "Move all cards from the discard to the draw pile. NL Chose future draw order. NL Prevent using Water for 4 turns"
   },
-  "elementalSpark:RockThrow":{
+  "elementalSpark:Levitate": {
+    "NAME": "Levitate",
+    "DESCRIPTION": "Draw a random card from your discard pile NL switches to Air"
+  },
+  "elementalSpark:LightUp": {
+    "NAME": "Light up",
+    "DESCRIPTION": "Deal !D! Damage NL switches to Fire"
+  },
+  "elementalSpark:RockThrow": {
     "NAME": "Rock throw",
     "DESCRIPTION": "Destroy all Block and deal Damage equal to it's amount to all enemies (Deals !D! damage.)"
+  },
+  "elementalSpark:SparkStrike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! Damage"
+  },
+  "elementalSpark:Splash": {
+    "NAME": "Splash",
+    "DESCRIPTION": "Deal !D! Damage NL Draw from your discard pile when entering Water element"
+  },
+  "elementalSpark:StandingWater": {
+    "NAME": "Standing Water",
+    "DESCRIPTION": "Retain !M! card in your inventory if finishing the turn in the Water element."
+  },
+  "elementalSpark:SuddenWind": {
+    "NAME": "Sudden Wind",
+    "DESCRIPTION": "Autoplay NL Switch to Air, gain [W]",
+    "UPGRADE_DESCRIPTION": "Autoplay NL Switch to Air, gain [W] [W]"
+  },
+  "elementalSpark:VolatileSpark": {
+    "NAME": "Volatile Spark",
+    "DESCRIPTION": "Switch to a random Element",
+    "UPGRADE_DESCRIPTION": "Switch to an Element of your choice"
   }
 }

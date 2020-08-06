@@ -22,5 +22,9 @@
   "elementalSpark:DodgePower": {
     "NAME": "Dodge",
     "DESCRIPTIONS": ["Give a ", "% chance to avoid incoming attacks"]
+  },
+  "elementalSpark:StandingWaterPower": {
+    "NAME": "Standing Water",
+    "DESCRIPTIONS": ["If turns end in water stance, retains ", " card", " cards"]
   }
 }

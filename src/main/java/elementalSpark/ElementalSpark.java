@@ -342,9 +342,9 @@ public class ElementalSpark implements
         //Ignore this
         pathCheck();
         // Add the Custom Dynamic Variables
-        logger.info("Add variables");
+        logger.info("Add variabls");
 
-        // Add the Custom Dynamic variables
+        // Add the Custom Dynamic variabls
 
         
         logger.info("Adding cards");
@@ -364,10 +364,13 @@ public class ElementalSpark implements
         //Water
        BaseMod.addCard( new Splash());
        BaseMod.addCard( new FlowIn());
-
+       BaseMod.addCard( new StandingWater());
+       AbstractCard t = new LaminarFlow();
+        BaseMod.addCard(t);
         //Air
        BaseMod.addCard( new Levitate());
        BaseMod.addCard( new FlyLikeAButterfly());
+       BaseMod.addCard( new SuddenWind());
 
         //Earth
        BaseMod.addCard( new EarthShield());
