@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.vfx.stance.DivinityParticleEffect;
 import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
 import com.megacrit.cardcrawl.vfx.stance.StanceChangeParticleGenerator;
 import elementalSpark.ElementalSpark;
+import elementalSpark.effects.ElementalStanceAuraEffect;
 
 import java.util.LinkedList;
 
@@ -36,6 +37,8 @@ public abstract class ElementAbstractStance extends AbstractStance {
         }
         return  ElementType.None;
     }
+
+
 
 
     public ElementAbstractStance(String loopKey)
@@ -70,7 +73,26 @@ public abstract class ElementAbstractStance extends AbstractStance {
         }
     }
 
+    public void updateAnimation() {
+        if (!Settings.DISABLE_EFFECTS) {
+            this.particleTimer -= Gdx.graphics.getDeltaTime();
+            if (this.particleTimer < 0.0F) {
+                this.particleTimer = 0.2F;
+                AbstractDungeon.effectsQueue.add(new DivinityParticleEffect());
+            }
+        }
+
+        this.particleTimer2 -= Gdx.graphics.getDeltaTime();
+        if (this.particleTimer2 < 0.0F) {
+            this.particleTimer2 = MathUtils.random(0.45F, 0.55F);
+            AbstractDungeon.effectsQueue.add(new ElementalStanceAuraEffect(type));
+        }
+
+    }
+
+
     //Update cards description that could be changed with a card.
+
     private void updateCards()
     {
 
@@ -91,39 +113,23 @@ public abstract class ElementAbstractStance extends AbstractStance {
 
     public void stopIdleSfx() {
         if (sfxId != -1L) {
-            CardCrawlGame.sound.stop(loopKey, sfxId);
+            //TODO:Uncomment when file added
+            //  CardCrawlGame.sound.stop(loopKey, sfxId);
         }
         sfxId = -1L;
     }
 
 
-
     //Subscription system for change needed when the stances change
     public interface Sub{
+
         void notify(ElementType element);
 
     }
 
-    public void updateAnimation() {
-        if (!Settings.DISABLE_EFFECTS) {
-            this.particleTimer -= Gdx.graphics.getDeltaTime();
-            if (this.particleTimer < 0.0F) {
-                this.particleTimer = 0.2F;
-                AbstractDungeon.effectsQueue.add(new DivinityParticleEffect());
-            }
-        }
-
-        this.particleTimer2 -= Gdx.graphics.getDeltaTime();
-        if (this.particleTimer2 < 0.0F) {
-            this.particleTimer2 = MathUtils.random(0.45F, 0.55F);
-            AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Divinity"));
-        }
-
-    }
 
 
-
-    private static final LinkedList<Sub> subs = new LinkedList<Sub>();
+    private static final LinkedList<Sub> subs = new LinkedList<>();
 
     public static void subscribe(Sub s)
     {

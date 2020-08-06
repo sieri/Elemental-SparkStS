@@ -19,7 +19,7 @@ import static elementalSpark.ElementalSpark.makeID;
 
 public class ChangeElementalStanceAction extends ChangeStanceAction {
 
-    private ElementType elementType;
+    private final ElementType elementType;
 
     public static AbstractStance chooseStance(ElementType type)
     {
@@ -43,7 +43,7 @@ public class ChangeElementalStanceAction extends ChangeStanceAction {
     {
         ElementType[] types = ElementType.values();
 
-        LinkedList<ElementType> typeAvailable = new LinkedList<ElementType>();
+        LinkedList<ElementType> typeAvailable = new LinkedList<>();
         for (ElementType t:types) {
             if (t !=  ElementType.None)
             {
