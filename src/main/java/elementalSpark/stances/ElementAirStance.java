@@ -1,18 +1,12 @@
 package elementalSpark.stances;
 
 import com.badlogic.gdx.graphics.Color;
-import com.evacipated.cardcrawl.mod.stslib.relics.OnAfterUseCardRelic;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.StanceStrings;
-import com.megacrit.cardcrawl.stances.AbstractStance;
-import com.megacrit.cardcrawl.stances.CalmStance;
 import elementalSpark.ElementalSpark;
 
 import java.util.LinkedList;
-import java.util.List;
 
 
 public class ElementAirStance extends ElementAbstractStance {
@@ -25,7 +19,7 @@ public class ElementAirStance extends ElementAbstractStance {
     public LinkedList<AbstractCard> cards = new LinkedList<AbstractCard>();
 
     public ElementAirStance() {
-        super();
+        super("AirLoop");
         name = NAME;
         ID = STANCE_ID;
         type = ElementType.Air;

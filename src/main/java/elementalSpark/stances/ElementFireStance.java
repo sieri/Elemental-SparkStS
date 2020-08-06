@@ -1,13 +1,10 @@
 package elementalSpark.stances;
 
 import com.badlogic.gdx.graphics.Color;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.StanceStrings;
-import com.megacrit.cardcrawl.monsters.city.BookOfStabbing;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.stances.AbstractStance;
 import elementalSpark.ElementalSpark;
 
 
@@ -22,7 +19,7 @@ public class ElementFireStance extends ElementAbstractStance  {
 
 
     public ElementFireStance() {
-        super();
+        super("FireLoop");
         name = NAME;
         ID = STANCE_ID;
 

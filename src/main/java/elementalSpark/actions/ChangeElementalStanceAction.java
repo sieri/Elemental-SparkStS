@@ -65,7 +65,7 @@ public class ChangeElementalStanceAction extends ChangeStanceAction {
 
 
         //get an element type at random
-        return typeAvailable.get(new Random().random(typeAvailable.size()));
+        return typeAvailable.get(new Random().random(typeAvailable.size())-1);
 
     }
 

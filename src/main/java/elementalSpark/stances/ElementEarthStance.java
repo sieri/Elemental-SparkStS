@@ -5,8 +5,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.stances.AbstractStance;
 import elementalSpark.ElementalSpark;
 
 
@@ -21,7 +19,7 @@ public class ElementEarthStance extends ElementAbstractStance  {
 
 
     public ElementEarthStance() {
-        super();
+        super("EarthLoop");
         name = NAME;
         ID = STANCE_ID;
 

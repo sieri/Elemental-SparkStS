@@ -4,9 +4,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.StanceStrings;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.DrawPower;
-import com.megacrit.cardcrawl.stances.AbstractStance;
 import elementalSpark.ElementalSpark;
 
 
@@ -21,13 +19,13 @@ public class ElementWaterStance extends ElementAbstractStance  {
 
 
     public ElementWaterStance() {
-        super();
+        super("WaterLoop");
         name = NAME;
         ID = STANCE_ID;
 
         type = ElementType.Water;
 
-        this.c = Color.SKY.cpy();
+        this.c = Color.NAVY.cpy();
 
         updateDescription();
     }

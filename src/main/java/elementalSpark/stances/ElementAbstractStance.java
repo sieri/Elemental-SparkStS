@@ -1,10 +1,18 @@
 package elementalSpark.stances;
 
-import basemod.interfaces.ISubscriber;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.stances.AbstractStance;
+import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+import com.megacrit.cardcrawl.vfx.stance.DivinityParticleEffect;
+import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
+import com.megacrit.cardcrawl.vfx.stance.StanceChangeParticleGenerator;
 import elementalSpark.ElementalSpark;
 
 import java.util.LinkedList;
@@ -16,6 +24,10 @@ public abstract class ElementAbstractStance extends AbstractStance {
 
     public ElementType type;
 
+    private static long sfxId = -1L;
+
+    public final String loopKey;
+
     public static ElementType getType(AbstractStance stance)
     {
         if(stance instanceof ElementAbstractStance)
@@ -26,15 +38,25 @@ public abstract class ElementAbstractStance extends AbstractStance {
     }
 
 
-    public ElementAbstractStance()
+    public ElementAbstractStance(String loopKey)
     {
-        super();
+        this.loopKey = loopKey;
         this.img = ImageMaster.loadImage("elementalSparkResources/images/char/SparkCharacter/orb/layer3.png");
     }
 
     @Override
     public void onEnterStance() {
-        super.onEnterStance();
+        if (sfxId != -1L) {
+            this.stopIdleSfx();
+        }
+
+        CardCrawlGame.sound.play("BELL");
+        sfxId = CardCrawlGame.sound.playAndLoop(loopKey);
+        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(this.c, true));
+        //TODO:Add effects for start up
+        // AbstractDungeon.effectsQueue.add(new StanceChangeParticleGenerator(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, "Divinity"));
+
+
         updateCards();
     }
 
@@ -67,11 +89,38 @@ public abstract class ElementAbstractStance extends AbstractStance {
 
     }
 
+    public void stopIdleSfx() {
+        if (sfxId != -1L) {
+            CardCrawlGame.sound.stop(loopKey, sfxId);
+        }
+        sfxId = -1L;
+    }
+
+
 
     //Subscription system for change needed when the stances change
     public interface Sub{
         void notify(ElementType element);
+
     }
+
+    public void updateAnimation() {
+        if (!Settings.DISABLE_EFFECTS) {
+            this.particleTimer -= Gdx.graphics.getDeltaTime();
+            if (this.particleTimer < 0.0F) {
+                this.particleTimer = 0.2F;
+                AbstractDungeon.effectsQueue.add(new DivinityParticleEffect());
+            }
+        }
+
+        this.particleTimer2 -= Gdx.graphics.getDeltaTime();
+        if (this.particleTimer2 < 0.0F) {
+            this.particleTimer2 = MathUtils.random(0.45F, 0.55F);
+            AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Divinity"));
+        }
+
+    }
+
 
 
     private static final LinkedList<Sub> subs = new LinkedList<Sub>();

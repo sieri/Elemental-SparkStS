@@ -4,6 +4,7 @@ import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
+import basemod.abstracts.AbstractCardModifier;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -13,6 +14,7 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -68,9 +70,9 @@ public class ElementalSpark implements
     public static final Color SPARK_WHITE = CardHelper.getColor(255f, 255f, 255f);
     
     // Potion Colors in RGB
-    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
-    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
-    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
+ //   public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
+ //   public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
+ //   public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
     
 
   
@@ -340,9 +342,9 @@ public class ElementalSpark implements
         //Ignore this
         pathCheck();
         // Add the Custom Dynamic Variables
-        logger.info("Add variabls");
+        logger.info("Add variables");
 
-        // Add the Custom Dynamic variabls
+        // Add the Custom Dynamic variables
 
         
         logger.info("Adding cards");
@@ -365,7 +367,7 @@ public class ElementalSpark implements
 
         //Air
        BaseMod.addCard( new Levitate());
-       BaseMod.addCard(  new FlyLikeAButterfly());
+       BaseMod.addCard( new FlyLikeAButterfly());
 
         //Earth
        BaseMod.addCard( new EarthShield());
