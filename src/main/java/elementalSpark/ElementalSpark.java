@@ -94,16 +94,16 @@ public class ElementalSpark implements
     private static final String SPARK_CHARACTER_PORTRAIT_BG = "elementalSparkResources/images/charSelect/SparkCharacterPortraitBG.png";
 
     //TODO:CHANGE assets
-    public static final String THE_DEFAULT_SHOULDER_1 = "elementalSparkResources/images/char/SparkCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "elementalSparkResources/images/char/SparkCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "elementalSparkResources/images/char/SparkCharacter/corpse.png";
+    public static final String THE_SPARK_SHOULDER_1 = "elementalSparkResources/images/char/SparkCharacter/shoulder.png";
+    public static final String THE_SPARK_SHOULDER_2 = "elementalSparkResources/images/char/SparkCharacter/shoulder2.png";
+    public static final String THE_SPARK_CORPSE = "elementalSparkResources/images/char/SparkCharacter/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "elementalSparkResources/images/Badge.png";
     
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "elementalSparkResources/images/char/SparkCharacter/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "elementalSparkResources/images/char/SparkCharacter/skeleton.json";
+    public static final String THE_SPARK_SKELETON_ATLAS = "elementalSparkResources/images/char/SparkCharacter/skeleton.atlas";
+    public static final String THE_SPARK_SKELETON_JSON = "elementalSparkResources/images/char/SparkCharacter/skeleton.json";
     
     // =============== MAKE IMAGE PATHS =================
     

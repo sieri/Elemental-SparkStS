@@ -33,10 +33,5 @@ public class ElementalStanceAuraEffect extends StanceAuraEffect {
                 this.color = new Color(MathUtils.random(0.0F, 0.1f), MathUtils.random(0.7F, 1F), MathUtils.random(0.0F, 0.1F), 0.0F);
                 break;
         }
-
-        ElementalSpark.logger.debug("New stance colour");
-        ElementalSpark.logger.debug(this.color);
-
-        
     }
 }

@@ -1,10 +1,9 @@
 package elementalSpark.characters;
 
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
+import basemod.animations.G3DJAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -100,16 +99,15 @@ public class TheSpark extends CustomPlayer {
     public TheSpark(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "elementalSparkResources/images/char/SparkCharacter/orb/vfx.png", null,
-                new SpriterAnimation(
-                        "elementalSparkResources/images/char/SparkCharacter/Spriter/SparkCharacter.scml"));
+                new G3DJAnimation("elementalSparkResources/images/char/SparkCharacter/Spark.g3dj","Cube|CubeAction.001"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
-                THE_DEFAULT_SHOULDER_2, // campfire pose
-                THE_DEFAULT_SHOULDER_1, // another campfire pose
-                THE_DEFAULT_CORPSE, // dead corpse
+                THE_SPARK_SHOULDER_2, // campfire pose
+                THE_SPARK_SHOULDER_1, // another campfire pose
+                THE_SPARK_CORPSE, // dead corpse
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
 
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
@@ -118,8 +116,8 @@ public class TheSpark extends CustomPlayer {
         // =============== ANIMATIONS =================  
 
         loadAnimation(
-                THE_DEFAULT_SKELETON_ATLAS,
-                THE_DEFAULT_SKELETON_JSON,
+                THE_SPARK_SKELETON_ATLAS,
+                THE_SPARK_SKELETON_JSON,
                 1.0f);
 
 
@@ -291,4 +289,12 @@ public class TheSpark extends CustomPlayer {
     public void updateAnimations() {
         super.updateAnimations();
     }
+
+
+    @Override
+    public void update() {
+        super.update();
+    }
+
+
 }
