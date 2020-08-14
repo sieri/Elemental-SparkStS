@@ -19,7 +19,7 @@ import static elementalSpark.ElementalSpark.makeID;
 
 public class ChangeElementalStanceAction extends ChangeStanceAction {
 
-    private ElementType elementType;
+    private final ElementType elementType;
 
     public static AbstractStance chooseStance(ElementType type)
     {

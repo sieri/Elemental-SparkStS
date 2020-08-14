@@ -1,4 +1,20 @@
 {
+  "elementalSpark:ChooseAir": {
+    "NAME": "Air",
+    "DESCRIPTION": "Select the Air Element"
+  },
+  "elementalSpark:ChooseEarth": {
+    "NAME": "Earth",
+    "DESCRIPTION": "Select the Earth Element"
+  },
+  "elementalSpark:ChooseFire": {
+    "NAME": "Fire",
+    "DESCRIPTION": "Select the Fire Element"
+  },
+  "elementalSpark:ChooseWater": {
+    "NAME": "Water",
+    "DESCRIPTION": "Select the Water Element"
+  },
   "elementalSpark:AdaptAndStrike": {
     "NAME": "Adapt and Strike",
     "DESCRIPTION": "Deal !D! Damage NL Gain !M! Damage changing elements while in hand"

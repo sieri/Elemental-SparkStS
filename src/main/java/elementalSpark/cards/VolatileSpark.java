@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import elementalSpark.ElementalSpark;
 import elementalSpark.actions.ChangeElementalStanceAction;
+import elementalSpark.actions.ChooseElementAction;
 import elementalSpark.characters.TheSpark;
 import elementalSpark.stances.ElementAbstractStance;
 import elementalSpark.stances.ElementWaterStance;
@@ -53,9 +54,8 @@ public class VolatileSpark extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (upgraded)
         {
-            //TODO: make the choice of element
             AbstractDungeon.actionManager.addToBottom(
-                    new ChangeElementalStanceAction(ElementAbstractStance.ElementType.Fire)
+                    new ChooseElementAction()
             );
 
         }
