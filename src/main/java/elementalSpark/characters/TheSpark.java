@@ -99,7 +99,7 @@ public class TheSpark extends CustomPlayer {
     public TheSpark(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "elementalSparkResources/images/char/SparkCharacter/orb/vfx.png", null,
-                new G3DJAnimation("elementalSparkResources/images/char/SparkCharacter/Spark.g3dj","Cube|CubeAction.001"));
+                new G3DJAnimation("elementalSparkResources/images/char/SparkCharacter/Spark.g3dj","Mball|animation"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
