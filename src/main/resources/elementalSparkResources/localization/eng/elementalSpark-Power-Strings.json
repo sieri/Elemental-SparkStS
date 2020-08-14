@@ -1,4 +1,12 @@
 {
+  "elementalSpark:DodgePower": {
+    "NAME": "Dodge",
+    "DESCRIPTIONS": ["Give a ", "% chance to avoid incoming attacks", " while ending a turn in Air Element"]
+  },
+  "elementalSpark:Ethereal": {
+    "NAME": "Ethereal",
+    "DESCRIPTIONS": ["Allow Dodge to work in every element"]
+  },
   "elementalSpark:FireOfTheForgePower": {
     "NAME": "Fire of the Forge",
     "DESCRIPTIONS": ["Upgrade a Random card in your hand when entering Fire"]
@@ -18,11 +26,7 @@
   "elementalSpark:StopEarthPower": {
     "NAME": "Cracked rock",
     "DESCRIPTIONS": ["Prevent switching to the Earth element for ", " turn", " turns"]
-  },
-  "elementalSpark:DodgePower": {
-    "NAME": "Dodge",
-    "DESCRIPTIONS": ["Give a ", "% chance to avoid incoming attacks"]
-  },
+    },
   "elementalSpark:StandingWaterPower": {
     "NAME": "Standing Water",
     "DESCRIPTIONS": ["If turns end in water stance, retains ", " card", " cards"]

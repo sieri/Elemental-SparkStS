@@ -11,6 +11,10 @@
     "NAME": "Earth Shield",
     "DESCRIPTION": "Gain !B! Block. NL switches to Earth"
   },
+  "elementalSpark:Ethereal": {
+    "NAME": "Ethereal",
+    "DESCRIPTION": "!M!% chance to dodge incoming attacks in every elements NL Prevent using Air for 4 turns"
+  },
   "elementalSpark:FinalFlame": {
     "NAME": "The Final Flame",
     "DESCRIPTION": "Deal !D! Damage NL Exit element NL Prevent using Fire for 4 turns"
@@ -32,6 +36,10 @@
     "DESCRIPTION": "Convert current block to TempHP",
     "UPGRADE_DESCRIPTION": "Gain !B! block NL Convert current block to TempHP"
   },
+  "elementalSpark:HeatWave": {
+    "NAME": "Heat wave",
+    "DESCRIPTION": "Deal !D! Damage to all enemies NL switches to Fire"
+  },
   "elementalSpark:LaminarFlow":{
     "NAME": "Laminar Flow",
     "DESCRIPTION": "Move all cards from the discard to the draw pile. NL Chose future draw order. NL Prevent using Water for 4 turns"
@@ -43,6 +51,10 @@
   "elementalSpark:LightUp": {
     "NAME": "Light up",
     "DESCRIPTION": "Deal !D! Damage NL switches to Fire"
+  },
+  "elementalSpark:Parasite": {
+    "NAME": "Parasite",
+    "DESCRIPTION": "Steal an enemies block NL switches to Earth"
   },
   "elementalSpark:RockThrow": {
     "NAME": "Rock throw",

@@ -1,10 +1,8 @@
 package elementalSpark;
 
-import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
-import basemod.abstracts.AbstractCardModifier;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -14,13 +12,11 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import elementalSpark.relics.SparkStarterRelic;
-import javafx.scene.effect.Light;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import elementalSpark.cards.*;
@@ -350,32 +346,35 @@ public class ElementalSpark implements
         logger.info("Adding cards");
         // Add the cards
 
-        //neutral-all
+        //neutral
        BaseMod.addCard( new Defend());
        BaseMod.addCard( new SparkStrike());
-       BaseMod.addCard( new VolatileSpark());
+       BaseMod.addCard( new VolatileSpark());     //sw
        BaseMod.addCard( new AdaptAndStrike());
 
         //Fire
        BaseMod.addCard( new FinalFlame());
        BaseMod.addCard( new FireOfTheForge());
        BaseMod.addCard( new LightUp());
+       BaseMod.addCard( new HeatWave());
 
         //Water
        BaseMod.addCard( new Splash());
        BaseMod.addCard( new FlowIn());
        BaseMod.addCard( new StandingWater());
-       AbstractCard t = new LaminarFlow();
-        BaseMod.addCard(t);
+       BaseMod.addCard(new LaminarFlow());
+
         //Air
        BaseMod.addCard( new Levitate());
        BaseMod.addCard( new FlyLikeAButterfly());
        BaseMod.addCard( new SuddenWind());
+       BaseMod.addCard( new Ethereal());
 
         //Earth
        BaseMod.addCard( new EarthShield());
        BaseMod.addCard( new Harden());
        BaseMod.addCard( new RockThrow());
+       BaseMod.addCard( new Parasite());
 
 
 

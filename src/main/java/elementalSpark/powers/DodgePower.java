@@ -37,7 +37,7 @@ public class DodgePower extends AbstractPower implements CloneablePowerInterface
         name = NAME;
         ID = POWER_ID;
 
-        this.amount = 5;
+        this.amount = amount;
 
         this.owner = AbstractDungeon.player;
 
@@ -55,17 +55,19 @@ public class DodgePower extends AbstractPower implements CloneablePowerInterface
 
     @Override
     public void updateDescription() {
-
-        if (amount == 1) {
+        if (owner.hasPower(EtherealPower.POWER_ID))
+        {
             description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-        } else if (amount > 1) {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
         }
+        else {
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + DESCRIPTIONS[2];
+        }
+
     }
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if(AbstractDungeon.player.stance instanceof ElementAirStance)
+        if(AbstractDungeon.player.stance instanceof ElementAirStance || owner.hasPower(EtherealPower.POWER_ID))
         {
             int randomNumber = new Random().random(100);
 
