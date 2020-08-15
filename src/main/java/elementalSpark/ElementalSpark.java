@@ -349,8 +349,9 @@ public class ElementalSpark implements
         //neutral
        BaseMod.addCard( new Defend());
        BaseMod.addCard( new SparkStrike());
-       BaseMod.addCard( new VolatileSpark());     //sw
+       BaseMod.addCard( new VolatileSpark());
        BaseMod.addCard( new AdaptAndStrike());
+       BaseMod.addCard( new ReactiveStrike());
 
         //Fire
        BaseMod.addCard( new FinalFlame());
@@ -456,7 +457,7 @@ public class ElementalSpark implements
         if (keywords != null) {
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
-                //  getModID().toLowerCase() makes your keyword mod specific (it won't show up in other cards that use that word)
+                ///getModID().toLowerCase() makes your keyword mod specific (it won't show up in other cards that use that word)
             }
         }
     }

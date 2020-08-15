@@ -5,7 +5,7 @@
         },
         "elementalSpark:ElementWater": {
                 "NAME": "Element Water",
-                "DESCRIPTION": ["The water makes you flowing through the battlefield. NL +1 card drawn"]
+                "DESCRIPTION": ["The elementalSpark:Water makes you flowing through the battlefield. NL +1 card drawn"]
         },
         "elementalSpark:ElementAir": {
                 "NAME": "Element Air",

@@ -28,7 +28,32 @@
       "earth"
     ],
     "DESCRIPTION" : "Element boosting your defence"
+  },
+  {
+    "NAMES": [
+      "AirLock"
+    ],
+    "DESCRIPTION" : "Card can only be played while in the Air element"
+  },
+  {
+    "NAMES": [
+      "EarthLock"
+    ],
+    "DESCRIPTION" : "Card can only be played while in the Earth element"
+  },
+  {
+    "NAMES": [
+      "FireLock"
+    ],
+    "DESCRIPTION" : "Card can only be played while in the Fire element"
+  },
+  {
+    "NAMES": [
+      "WaterLock"
+    ],
+    "DESCRIPTION" : "Card can only be played while in the Water element"
   }
+
 
 
 ]

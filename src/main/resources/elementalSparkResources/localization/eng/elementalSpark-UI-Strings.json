@@ -2,17 +2,17 @@
   "elementalSpark:BasicAdaptiveAttackModifier": {
     "TEXT_DICT": {
       "Fire":" NL Attack twice",
-      "Water":" NL Discard 1 card. NL Then draw 1 card",
+      "elementalSpark:Water":" NL Discard 1 card. NL Then draw 1 card",
       "Air":" NL Apply Weak",
       "Earth":" NL Gain !B! Block."
     }
   },
   "elementalSpark:ElementLimiterModifier": {
     "TEXT_DICT": {
-      "Fire":"Fire Lock NL",
-      "Water":"Water Lock NL",
-      "Air":"Air Lock NL",
-      "Earth":"Earth Lock NL"
+      "Fire":"elementalspark:FireLock NL",
+      "Water":"elementalspark:WaterLock NL",
+      "Air":"elementalspark:AirLock NL",
+      "Earth":"elementalspark:EarthLock NL"
     }
   },
   "elementalSpark:uiSortingGroup": {

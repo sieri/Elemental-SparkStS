@@ -1,7 +1,7 @@
 {
   "elementalSpark:DodgePower": {
     "NAME": "Dodge",
-    "DESCRIPTIONS": ["Give a ", "% chance to avoid incoming attacks", " while ending a turn in Air Element"]
+    "DESCRIPTIONS": ["Give a ", "% chance to avoid incoming attacks", " while ending a turn in elementalspark:Air Element"]
   },
   "elementalSpark:Ethereal": {
     "NAME": "Ethereal",
@@ -9,26 +9,26 @@
   },
   "elementalSpark:FireOfTheForgePower": {
     "NAME": "Fire of the Forge",
-    "DESCRIPTIONS": ["Upgrade a Random card in your hand when entering Fire"]
+    "DESCRIPTIONS": ["Upgrade a Random card in your hand when entering elementalspark:Fire"]
   },
   "elementalSpark:StopFirePower": {
-    "NAME": "Extinguished fire",
-    "DESCRIPTIONS": ["Prevent switching to the Fire element for ", " turn", " turns"]
+    "NAME": "Extinguished Fire",
+    "DESCRIPTIONS": ["Prevent switching to the elementalspark:Fire element for ", " turn", " turns"]
   },
   "elementalSpark:StopWaterPower": {
     "NAME": "Drought",
-    "DESCRIPTIONS": ["Prevent switching to the Water element for ", " turn", " turns"]
+    "DESCRIPTIONS": ["Prevent switching to the elementalspark:Water element for ", " turn", " turns"]
   },
   "elementalSpark:StopAirPower": {
     "NAME": "Vacuum",
-    "DESCRIPTIONS": ["Prevent switching to the Air element for ", " turn", " turns"]
+    "DESCRIPTIONS": ["Prevent switching to the elementalspark:Air element for ", " turn", " turns"]
   },
   "elementalSpark:StopEarthPower": {
     "NAME": "Cracked rock",
-    "DESCRIPTIONS": ["Prevent switching to the Earth element for ", " turn", " turns"]
+    "DESCRIPTIONS": ["Prevent switching to the elementalspark:Earth element for ", " turn", " turns"]
     },
   "elementalSpark:StandingWaterPower": {
     "NAME": "Standing Water",
-    "DESCRIPTIONS": ["If turns end in water stance, retains ", " card", " cards"]
+    "DESCRIPTIONS": ["If turns end in elementalspark:Water element, retains ", " card", " cards"]
   }
 }
