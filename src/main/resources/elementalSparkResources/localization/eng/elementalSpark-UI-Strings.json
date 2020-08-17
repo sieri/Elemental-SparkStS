@@ -9,10 +9,10 @@
   },
   "elementalSpark:ElementLimiterModifier": {
     "TEXT_DICT": {
-      "Fire":"elementalspark:FireLock NL",
-      "Water":"elementalspark:WaterLock NL",
-      "Air":"elementalspark:AirLock NL",
-      "Earth":"elementalspark:EarthLock NL"
+      "Fire":"elementalspark:FireLock NL ",
+      "Water":"elementalspark:WaterLock NL ",
+      "Air":"elementalspark:AirLock NL ",
+      "Earth":"elementalspark:EarthLock NL "
     }
   },
   "elementalSpark:uiSortingGroup": {

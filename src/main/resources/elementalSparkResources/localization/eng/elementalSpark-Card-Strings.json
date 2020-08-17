@@ -23,6 +23,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "elementalSpark:Destabilize": {
+    "NAME": "Destabilize",
+    "DESCRIPTION": "Change enemy intended action"
+  },
   "elementalSpark:EarthShield": {
     "NAME": "Earth Shield",
     "DESCRIPTION": "Gain !B! Block. NL switches to elementalspark:Earth"

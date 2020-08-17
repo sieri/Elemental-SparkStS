@@ -31,25 +31,25 @@
   },
   {
     "NAMES": [
-      "AirLock"
+      "airlock"
     ],
     "DESCRIPTION" : "Card can only be played while in the Air element"
   },
   {
     "NAMES": [
-      "EarthLock"
+      "earthlock"
     ],
     "DESCRIPTION" : "Card can only be played while in the Earth element"
   },
   {
     "NAMES": [
-      "FireLock"
+      "firelock"
     ],
     "DESCRIPTION" : "Card can only be played while in the Fire element"
   },
   {
     "NAMES": [
-      "WaterLock"
+      "waterlock"
     ],
     "DESCRIPTION" : "Card can only be played while in the Water element"
   }

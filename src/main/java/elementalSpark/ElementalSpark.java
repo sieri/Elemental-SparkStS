@@ -370,6 +370,7 @@ public class ElementalSpark implements
        BaseMod.addCard( new FlyLikeAButterfly());
        BaseMod.addCard( new SuddenWind());
        BaseMod.addCard( new Ethereal());
+       BaseMod.addCard( new Destabilize());
 
         //Earth
        BaseMod.addCard( new EarthShield());

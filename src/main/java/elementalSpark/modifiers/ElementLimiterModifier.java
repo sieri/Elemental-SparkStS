@@ -30,7 +30,7 @@ public class ElementLimiterModifier extends AbstractCardModifier {
     @Override
     public String modifyDescription(String rawDescription, AbstractCard card)
     {
-        return keyword + " " + rawDescription;
+        return keyword + rawDescription;
     }
 
     @Override
