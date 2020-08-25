@@ -2,6 +2,7 @@ package elementalSpark.stances;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.StanceStrings;
@@ -9,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.city.BookOfStabbing;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import elementalSpark.ElementalSpark;
+import elementalSpark.relics.UntamedFire;
 
 
 public class ElementFireStance extends ElementAbstractStance  {
@@ -49,6 +51,14 @@ public class ElementFireStance extends ElementAbstractStance  {
     @Override
     public void onExitStance() {
         super.onExitStance();
+
+        //check if the player has the Untamed fire relic
+        if (AbstractDungeon.player.hasRelic(UntamedFire.ID))
+        {
+            return;
+        }
+
+        //else remove the strength
         if(AbstractDungeon.player.hasPower(StrengthPower.POWER_ID))
         {
             AbstractDungeon.player.getPower(StrengthPower.POWER_ID).stackPower(-boost);

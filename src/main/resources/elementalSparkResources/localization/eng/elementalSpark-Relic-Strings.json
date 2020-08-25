@@ -1,0 +1,16 @@
+{
+  "elementalSpark:SparkStarterRelic": {
+    "NAME": "Unbridled Sprite",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Enter a random element at the start of the fight"
+    ]
+  },
+  "elementalSpark:UntamedFire": {
+  "NAME": "Untamed Fire",
+  "FLAVOR": "What is this?",
+  "DESCRIPTIONS": [
+    "No longer loose strength when exiting fire. But Gain one elementalspark:Burned each time you enter it"
+  ]
+}
+}

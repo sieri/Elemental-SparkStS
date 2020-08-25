@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import elementalSpark.relics.SparkStarterRelic;
+import elementalSpark.relics.UntamedFire;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import elementalSpark.cards.*;
@@ -317,6 +318,11 @@ public class ElementalSpark implements
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new SparkStarterRelic(), TheSpark.Enums.COLOR_WHITE);
 
+        //fire only
+        BaseMod.addRelicToCustomPool(new UntamedFire(), TheSpark.Enums.COLOR_WHITE);
+
+
+
         // This adds a relic to the Shared pool. Every character can find this relic.
 
 
@@ -381,9 +387,6 @@ public class ElementalSpark implements
 
 
 
-
-
-
         logger.info("Done adding cards!");
     }
     
@@ -412,7 +415,7 @@ public class ElementalSpark implements
         
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Relic-Strings.json");
+                getModID() + "Resources/localization/eng/elementalSpark-Relic-Strings.json");
         
         // Event Strings
         BaseMod.loadCustomStringsFile(EventStrings.class,

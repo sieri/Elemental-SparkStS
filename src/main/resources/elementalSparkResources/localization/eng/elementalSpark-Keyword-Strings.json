@@ -52,8 +52,12 @@
       "waterlock"
     ],
     "DESCRIPTION" : "Card can only be played while in the Water element"
+  },
+  {
+    "NAMES":[
+      "burned"
+    ],
+    "DESCRIPTION": "Receive more damage from attacks for each stack of burned applied."
   }
-
-
 
 ]

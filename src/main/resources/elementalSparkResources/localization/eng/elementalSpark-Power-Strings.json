@@ -1,9 +1,13 @@
 {
+  "elementalSpark:BurnedPower": {
+    "NAME": "Burned",
+    "DESCRIPTIONS": ["Receive ", "% more damage from Attacks until the end of the fight"]
+  },
   "elementalSpark:DodgePower": {
     "NAME": "Dodge",
     "DESCRIPTIONS": ["Give a ", "% chance to avoid incoming attacks", " while ending a turn in elementalspark:Air Element"]
   },
-  "elementalSpark:Ethereal": {
+  "elementalSpark:EtherealPower": {
     "NAME": "Ethereal",
     "DESCRIPTIONS": ["Allow Dodge to work in every element"]
   },
