@@ -7,10 +7,19 @@
     ]
   },
   "elementalSpark:UntamedFire": {
-  "NAME": "Untamed Fire",
-  "FLAVOR": "What is this?",
-  "DESCRIPTIONS": [
-    "No longer loose strength when exiting fire. But Gain one elementalspark:Burned each time you enter it"
-  ]
-}
+    "NAME": "Untamed Fire",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "No longer loose strength when exiting fire. But Gain one elementalspark:Burned each time you enter it"
+    ]
+  },
+  "elementalSpark:EverfullUrn":
+  {
+    "NAME": "Everfull Urn",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS":
+    [
+      "Before your turn start enter the elemtalspark:Water stace"
+    ]
+  }
 }

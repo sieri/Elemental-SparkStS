@@ -3,29 +3,31 @@ package elementalSpark.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ChangeStateAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import elementalSpark.ElementalSpark;
+import elementalSpark.actions.ChangeElementalStanceAction;
 import elementalSpark.powers.BurnedPower;
+import elementalSpark.stances.ElementAbstractStance;
 import elementalSpark.stances.ElementFireStance;
 import elementalSpark.util.TextureLoader;
 
 import static elementalSpark.ElementalSpark.makeRelicOutlinePath;
 import static elementalSpark.ElementalSpark.makeRelicPath;
 
-public class UntamedFire extends CustomRelic {
+public class EverfullUrn extends CustomRelic {
 
     // ID, images, text.
-    public static final String ID = ElementalSpark.makeID("UntamedFire");
+    public static final String ID = ElementalSpark.makeID("EverfullUrn");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("UntamedFire.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("UntamedFire.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("EverfullUrn.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("EverfullUrn.png"));
 
-    public UntamedFire() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
+    public EverfullUrn() {
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
-
 
     // Description
     @Override
@@ -33,17 +35,11 @@ public class UntamedFire extends CustomRelic {
         return DESCRIPTIONS[0];
     }
 
-
     @Override
-    public void onChangeStance(AbstractStance prevStance, AbstractStance newStance) {
-        AbstractPlayer p = AbstractDungeon.player;
+    public void atTurnStart() {
 
-        if(newStance instanceof ElementFireStance){
-
-            this.flash();
-
-            addToTop( new ApplyPowerAction(p,p,new BurnedPower(3)));
-        }
+        addToTop(new ChangeElementalStanceAction(ElementAbstractStance.ElementType.Water));
+        flash();
 
     }
 }
