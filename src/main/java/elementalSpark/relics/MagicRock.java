@@ -3,29 +3,32 @@ package elementalSpark.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import elementalSpark.ElementalSpark;
+import elementalSpark.actions.ChangeElementalStanceAction;
 import elementalSpark.powers.BurnedPower;
+import elementalSpark.stances.ElementAbstractStance;
+import elementalSpark.stances.ElementEarthStance;
 import elementalSpark.stances.ElementFireStance;
 import elementalSpark.util.TextureLoader;
 
 import static elementalSpark.ElementalSpark.makeRelicOutlinePath;
 import static elementalSpark.ElementalSpark.makeRelicPath;
 
-public class UntamedFire extends CustomRelic {
+public class MagicRock extends CustomRelic {
 
     // ID, images, text.
-    public static final String ID = ElementalSpark.makeID("UntamedFire");
+    public static final String ID = ElementalSpark.makeID("MagicRock");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("UntamedFire.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("UntamedFire.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("MagicRock.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("MagicRock.png"));
 
-    public UntamedFire() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
+    public MagicRock() {
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
-
 
     // Description
     @Override
@@ -33,17 +36,14 @@ public class UntamedFire extends CustomRelic {
         return DESCRIPTIONS[0];
     }
 
-
     @Override
     public void onChangeStance(AbstractStance prevStance, AbstractStance newStance) {
-
-        if(newStance instanceof ElementFireStance){
+        if(newStance instanceof ElementEarthStance){
             AbstractPlayer p = AbstractDungeon.player;
 
             this.flash();
 
-            addToTop( new ApplyPowerAction(p,p,new BurnedPower(3)));
+            addToTop( new GainBlockAction(p, 3));
         }
-
     }
 }

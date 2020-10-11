@@ -10,7 +10,7 @@
     "NAME": "Untamed Fire",
     "FLAVOR": "What is this?",
     "DESCRIPTIONS": [
-      "No longer loose strength when exiting fire. But Gain one elementalspark:Burned each time you enter it"
+      "No longer loose strength when exiting Fire. But Gain one elementalspark:Burned each time you enter it"
     ]
   },
   "elementalSpark:EverfullUrn":
@@ -19,7 +19,25 @@
     "FLAVOR": "What is this?",
     "DESCRIPTIONS":
     [
-      "Before your turn start enter the elemtalspark:Water stace"
+      "Before your turn start enter the elementalspark:Water stace"
+    ]
+  },
+  "elementalSpark:MagicRock":
+  {
+    "NAME": "Magic Rock",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS":
+    [
+      "When you enter the elementalspark:Earth gain 3 block"
+    ]
+  },
+  "elementalSpark:FeatherArmor":
+  {
+    "NAME": "Feather Armor",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS":
+    [
+      "When you get unblocked hits you have a 50% chance to enter elementalspark:Air"
     ]
   }
 }

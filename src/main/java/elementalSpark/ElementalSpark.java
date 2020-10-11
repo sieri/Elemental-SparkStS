@@ -16,9 +16,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
-import elementalSpark.relics.EverfullUrn;
-import elementalSpark.relics.SparkStarterRelic;
-import elementalSpark.relics.UntamedFire;
+import elementalSpark.relics.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import elementalSpark.cards.*;
@@ -317,6 +315,8 @@ public class ElementalSpark implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
+
+        //element neutral
         BaseMod.addRelicToCustomPool(new SparkStarterRelic(), TheSpark.Enums.COLOR_WHITE);
 
         //fire only
@@ -324,6 +324,12 @@ public class ElementalSpark implements
 
         //water only
         BaseMod.addRelicToCustomPool(new EverfullUrn(), TheSpark.Enums.COLOR_WHITE);
+
+        //earth only
+        BaseMod.addRelicToCustomPool(new MagicRock(), TheSpark.Enums.COLOR_WHITE);
+
+        //air only
+        BaseMod.addRelicToCustomPool(new FeatherArmor(), TheSpark.Enums.COLOR_WHITE);
 
         // This adds a relic to the Shared pool. Every character can find this relic.
 
